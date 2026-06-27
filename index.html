@@ -29,7 +29,9 @@ img{max-width:100%;display:block}
 .topbar{position:sticky;top:0;z-index:50;background:rgba(251,247,238,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
 .brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.2px}
-.brand-mark{width:38px;height:38px;border-radius:14px;background:var(--sage);display:grid;place-items:center;color:#fff;box-shadow:0 10px 30px rgba(71,98,79,.25)}
+.brand-mark{width:48px;height:48px;border-radius:12px;background:#fff;display:block;object-fit:cover;box-shadow:0 10px 30px rgba(71,98,79,.18);border:1px solid var(--line)}
+.hero-media{display:flex;flex-direction:column;gap:18px;align-items:center}
+.hero-logo{width:min(360px,86%);height:auto;display:block;margin:0 auto}
 .brand small{display:block;font-weight:650;color:var(--muted);font-size:12px;margin-top:-3px}
 .navlinks{display:flex;gap:18px;align-items:center;font-size:14px;font-weight:700;color:#405045}
 .navlinks a:hover{color:var(--sage)}
@@ -172,7 +174,7 @@ footer{padding:36px 0 50px;border-top:1px solid var(--line);color:var(--muted)}.
 <body>
 <div class="topbar">
 <div class="container nav">
-  <a class="brand" href="#top" aria-label="Ovendales home"><span class="brand-mark">⌂</span><span>Ovendales<br><small>Self Catering Cottage</small></span></a>
+  <a class="brand" href="#top" aria-label="Ovendales home"><img class="brand-mark" src="assets/ovendales-logosmall.png" alt="Ovendales nest logo"><span>Ovendales<br><small>Self Catering Cottage</small></span></a>
   <nav class="navlinks" aria-label="Main navigation">
     <a href="#features">Features</a>
     <a href="#long-stays">Long stays</a>
@@ -207,11 +209,14 @@ footer{padding:36px 0 50px;border-top:1px solid var(--line);color:var(--muted)}.
       </div>
     </div>
     <!-- FEATURE PHOTO: real photo replaces the old SVG placeholder -->
-    <div class="photo-card real-photo" aria-label="Ovendales garden cottage entrance">
-      <img src="assets/2.jpg" alt="Peaceful garden path leading to Ovendales Self Catering Cottage in Benoni">
-      <div class="photo-overlay">
-        <h3>Peaceful garden cottage charm</h3>
-        <p>Private, homely, and hosted with care — the kind of place guests remember and recommend.</p>
+    <div class="hero-media">
+      <img class="hero-logo" src="assets/ovendales-logo.png" alt="Ovendales Self Catering Cottage — Peaceful Home Away From Home">
+      <div class="photo-card real-photo" aria-label="Ovendales garden cottage entrance">
+        <img src="assets/16.jpg" alt="Peaceful garden path leading to Ovendales Self Catering Cottage in Benoni">
+        <div class="photo-overlay">
+          <h3>Peaceful garden cottage charm</h3>
+          <p>Private, homely, and hosted with care — the kind of place guests remember and recommend.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -288,13 +293,13 @@ footer{padding:36px 0 50px;border-top:1px solid var(--line);color:var(--muted)}.
       <div class="gallery-main">
         <button class="nav-btn prev" onclick="moveGallery(-1)">‹</button>
         <div class="gallery-track" id="galleryTrack">
-          <img src="assets/3.jpg"  class="active" onclick="openLightbox(this)" alt="Living room with two sofas and coffee table">
+          <img src="assets/2.jpg"  class="active" onclick="openLightbox(this)" alt="Main bedroom with double bed">
           <img src="assets/5.jpg"  onclick="openLightbox(this)" alt="Lounge with bookshelf, TV and comfortable seating">
           <img src="assets/4.jpg"  onclick="openLightbox(this)" alt="Living area with flat-screen TV and sound system">
           <img src="assets/9.jpg"  onclick="openLightbox(this)" alt="Open-plan living and dining area">
           <img src="assets/6.jpg"  onclick="openLightbox(this)" alt="Dining table for four with mirror">
           <img src="assets/17.jpg" onclick="openLightbox(this)" alt="Dining nook beside the private entrance">
-          <img src="assets/2.jpg"  onclick="openLightbox(this)" alt="Main bedroom with double bed">
+          <img src="assets/3.jpg"  onclick="openLightbox(this)" alt="Bathroom entrance">
           <img src="assets/7.jpg"  onclick="openLightbox(this)" alt="Bedroom with dressing table and bedside lamps">
           <img src="assets/8.jpg"  onclick="openLightbox(this)" alt="Bedroom with en-suite bathroom">
           <img src="assets/15.jpg" onclick="openLightbox(this)" alt="Fully equipped kitchen with fridge and oven">
@@ -318,13 +323,13 @@ footer{padding:36px 0 50px;border-top:1px solid var(--line);color:var(--muted)}.
       </div>
       <!-- THUMBNAILS -->
       <div class="thumb-strip" id="thumbStrip">
-        <img src="assets/3.jpg"  class="active" onclick="setMain(0)"  alt="">
+        <img src="assets/2.jpg"  class="active" onclick="setMain(0)"  alt="">
         <img src="assets/5.jpg"  onclick="setMain(1)"  alt="">
         <img src="assets/4.jpg"  onclick="setMain(2)"  alt="">
         <img src="assets/9.jpg"  onclick="setMain(3)"  alt="">
         <img src="assets/6.jpg"  onclick="setMain(4)"  alt="">
         <img src="assets/17.jpg" onclick="setMain(5)"  alt="">
-        <img src="assets/2.jpg"  onclick="setMain(6)"  alt="">
+        <img src="assets/3.jpg"  onclick="setMain(6)"  alt="">
         <img src="assets/7.jpg"  onclick="setMain(7)"  alt="">
         <img src="assets/8.jpg"  onclick="setMain(8)"  alt="">
         <img src="assets/15.jpg" onclick="setMain(9)"  alt="">
