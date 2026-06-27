@@ -206,22 +206,9 @@ footer{padding:36px 0 50px;border-top:1px solid var(--line);color:var(--muted)}.
         <div class="rate"><span>Monthly lets</span><strong>R25,056</strong><small>25% off</small></div>
       </div>
     </div>
-    <div class="photo-card" aria-label="Cottage garden illustration. Replace with best cottage photo.">
-      <svg viewBox="0 0 820 920" role="img" aria-label="Warm cottage in a peaceful garden">
-        <defs><linearGradient id="sky" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f8f2db"/><stop offset=".55" stop-color="#e7f0e2"/><stop offset="1" stop-color="#d8e6d3"/></linearGradient><linearGradient id="house" x1="0" x2="1"><stop offset="0" stop-color="#fff8e8"/><stop offset="1" stop-color="#e8d2aa"/></linearGradient></defs>
-        <rect width="820" height="920" fill="url(#sky)"/>
-        <circle cx="700" cy="130" r="72" fill="#f0c96c" opacity=".72"/>
-        <path d="M0 620 C160 540 330 660 500 585 C650 520 750 545 820 510 L820 920 L0 920 Z" fill="#8baa7b" opacity=".52"/>
-        <path d="M0 730 C200 650 310 780 520 700 C680 640 760 670 820 630 L820 920 L0 920 Z" fill="#5f7d66" opacity=".64"/>
-        <ellipse cx="410" cy="825" rx="420" ry="105" fill="#314b3a" opacity=".16"/>
-        <path d="M185 455 L410 275 L640 455 Z" fill="#754b2d"/>
-        <path d="M230 455 H600 V705 Q600 735 570 735 H260 Q230 735 230 705 Z" fill="url(#house)"/>
-        <path d="M185 455 L410 275 L640 455 H585 L410 323 L240 455 Z" fill="#8f5a33"/>
-        <rect x="285" y="520" width="90" height="85" rx="10" fill="#9ec1cf"/><rect x="455" y="520" width="90" height="85" rx="10" fill="#9ec1cf"/><path d="M390 735 V590 Q390 560 420 560 Q450 560 450 590 V735 Z" fill="#5b3a25"/>
-        <path d="M245 690 H590" stroke="#c28f3d" stroke-width="10" stroke-linecap="round"/>
-        <g fill="#47624f"><circle cx="135" cy="510" r="86"/><circle cx="115" cy="595" r="70"/><circle cx="690" cy="535" r="98"/><circle cx="715" cy="630" r="72"/></g>
-        <g fill="#f4efdd"><circle cx="104" cy="578" r="7"/><circle cx="160" cy="502" r="6"/><circle cx="705" cy="582" r="7"/><circle cx="745" cy="520" r="6"/></g>
-      </svg>
+    <!-- FEATURE PHOTO: real photo replaces the old SVG placeholder -->
+    <div class="photo-card real-photo" aria-label="Ovendales garden cottage entrance">
+      <img src="16.jpg" alt="Peaceful garden path leading to Ovendales Self Catering Cottage in Benoni">
       <div class="photo-overlay">
         <h3>Peaceful garden cottage charm</h3>
         <p>Private, homely, and hosted with care — the kind of place guests remember and recommend.</p>
@@ -295,82 +282,67 @@ footer{padding:36px 0 50px;border-top:1px solid var(--line);color:var(--muted)}.
       </div>
       <p>Take a closer look at the peaceful garden cottage, living areas, kitchen, and outdoor spaces.</p>
     </div>
-    
+
     <div class="gallery-wrap">
       <!-- MAIN CAROUSEL -->
       <div class="gallery-main">
         <button class="nav-btn prev" onclick="moveGallery(-1)">‹</button>
         <div class="gallery-track" id="galleryTrack">
-          <img assets="1.jpg" class="active" onclick="openLightbox(this)">
-          <img src="ovendales-assets-1.png" style="width:300px">
-          <img src="ovendales-assets-2.png">
-          <img src="ovendales-assets-3.png">
-          <img src="ovendales-assets-4.png">
-          <img src="ovendales-assets-5.png">
-          <img src="ovendales-assets-6.png">
-          <img src="ovendales-assets-7.png">
-          <img src="ovendales-assets-8.png">
-          <img src="ovendales-assets-9.png">
-          <img src="ovendales-assets-10.png">
-          <img src="ovendales-assets-11.png">
-          <img src="ovendales-assets-12.png">
-          <img src="ovendales-assets-13.png">
-          <img src="ovendales-assets-14.png">
-          <img src="ovendales-assets-15.png">   
-          <img src="ovendales-assets-16.png">                         
-          <img src="ovendales-assets-17.png"> 
-          <img src="ovendales-assets-18.png">
-          <img src="ovendales-assets-19.png">
-          <img src="ovendales-assets-20.png ">
-          <img src="ovendales-assets-21.png">
-          <img src="ovendales-assets-22.png">
-          <img src="ovendales-assets-23.png">          
-          <img src="ovendales-assets-24.png">
-          <img src="ovendales-assets-25.png">
-          <img src="ovendales-assets-26.png">
-          <img src="ovendales-assets-27.png"> 
-          <img src="ovendales-assets-28.png">
-          <img src="ovendales-assets-29.png"> 
-          <img src="ovendales-assets-30.png">
-          <img src="ovendales-assets-31.png">
-          <img src="ovendales-assets-32.png">
+          <img src="3.jpg"  class="active" onclick="openLightbox(this)" alt="Living room with two sofas and coffee table">
+          <img src="5.jpg"  onclick="openLightbox(this)" alt="Lounge with bookshelf, TV and comfortable seating">
+          <img src="4.jpg"  onclick="openLightbox(this)" alt="Living area with flat-screen TV and sound system">
+          <img src="9.jpg"  onclick="openLightbox(this)" alt="Open-plan living and dining area">
+          <img src="6.jpg"  onclick="openLightbox(this)" alt="Dining table for four with mirror">
+          <img src="17.jpg" onclick="openLightbox(this)" alt="Dining nook beside the private entrance">
+          <img src="2.jpg"  onclick="openLightbox(this)" alt="Main bedroom with double bed">
+          <img src="7.jpg"  onclick="openLightbox(this)" alt="Bedroom with dressing table and bedside lamps">
+          <img src="8.jpg"  onclick="openLightbox(this)" alt="Bedroom with en-suite bathroom">
+          <img src="15.jpg" onclick="openLightbox(this)" alt="Fully equipped kitchen with fridge and oven">
+          <img src="20.jpg" onclick="openLightbox(this)" alt="Kitchen with stove and washing machine">
+          <img src="14.jpg" onclick="openLightbox(this)" alt="Kitchen counter with air fryer and toaster">
+          <img src="18.jpg" onclick="openLightbox(this)" alt="Tea and coffee station">
+          <img src="13.jpg" onclick="openLightbox(this)" alt="Cutlery and utensils drawer">
+          <img src="11.jpg" onclick="openLightbox(this)" alt="Cookware, pots and small appliances">
+          <img src="23.jpg" onclick="openLightbox(this)" alt="Stocked pantry cupboard with crockery">
+          <img src="12.jpg" onclick="openLightbox(this)" alt="Bathroom with toilet and basin">
+          <img src="10.jpg" onclick="openLightbox(this)" alt="Shower and vanity">
+          <img src="32.jpg" onclick="openLightbox(this)" alt="Covered patio with table and braai">
+          <img src="34.jpg" onclick="openLightbox(this)" alt="Private patio seating area">
+          <img src="16.jpg" onclick="openLightbox(this)" alt="Garden path entrance to the cottage">
+          <img src="26.jpg" onclick="openLightbox(this)" alt="Cottage entrance with potted plants">
+          <img src="30.jpg" onclick="openLightbox(this)" alt="Covered carport and courtyard">
+          <img src="33.jpg" onclick="openLightbox(this)" alt="Secure off-street parking under cover">
+          <img src="29.jpg" onclick="openLightbox(this)" alt="Garden with braai and outdoor seating">
         </div>
         <button class="nav-btn next" onclick="moveGallery(1)">›</button>
       </div>
       <!-- THUMBNAILS -->
       <div class="thumb-strip" id="thumbStrip">
-        <img src="ovendales-assets-1.png">
-        <img src="ovendales-assets-2.png">
-        <img src="ovendales-assets-3.png">
-        <img src="ovendales-assets-4.png">
-        <img src="ovendales-assets-5.png">
-        <img src="ovendales-assets-6.png">
-        <img src="ovendales-assets-7.png">
-        <img src="ovendales-assets-8.png">
-        <img src="ovendales-assets-9.png">
-        <img src="ovendales-assets-10.png">
-        <img src="ovendales-assets-11.png">
-        <img src="ovendales-assets-12.png">
-        <img src="ovendales-assets-13.png">
-        <img src="ovendales-assets-14.png">
-        <img src="ovendales-assets-15.png">
-        <img src="ovendales-assets-16.png">
-        <img src="ovendales-assets-17.png">
-        <img src="ovendales-assets-18.png">
-        <img src="ovendales-assets-19.png">
-        <img src="ovendales-assets-20.png">
-        <img src="ovendales-assets-21.png">
-        <img src="ovendales-assets-22.png">
-        <img src="ovendales-assets-23.png">
-        <img src="ovendales-assets-24.png">
-        <img src="ovendales-assets-25.png">
-        <img src="ovendales-assets-26.png">
-        <img src="ovendales-assets-27.png">
-        <img src="ovendales-assets-28.png">
-        <img src="ovendales-assets-29.png">
-        <img src="ovendales-assets-30.png"> 
-        <img src="ovendales-assets-31.png"> 
-        <img src="ovendales-assets-32.png"> 
+        <img src="3.jpg"  class="active" onclick="setMain(0)"  alt="">
+        <img src="5.jpg"  onclick="setMain(1)"  alt="">
+        <img src="4.jpg"  onclick="setMain(2)"  alt="">
+        <img src="9.jpg"  onclick="setMain(3)"  alt="">
+        <img src="6.jpg"  onclick="setMain(4)"  alt="">
+        <img src="17.jpg" onclick="setMain(5)"  alt="">
+        <img src="2.jpg"  onclick="setMain(6)"  alt="">
+        <img src="7.jpg"  onclick="setMain(7)"  alt="">
+        <img src="8.jpg"  onclick="setMain(8)"  alt="">
+        <img src="15.jpg" onclick="setMain(9)"  alt="">
+        <img src="20.jpg" onclick="setMain(10)" alt="">
+        <img src="14.jpg" onclick="setMain(11)" alt="">
+        <img src="18.jpg" onclick="setMain(12)" alt="">
+        <img src="13.jpg" onclick="setMain(13)" alt="">
+        <img src="11.jpg" onclick="setMain(14)" alt="">
+        <img src="23.jpg" onclick="setMain(15)" alt="">
+        <img src="12.jpg" onclick="setMain(16)" alt="">
+        <img src="10.jpg" onclick="setMain(17)" alt="">
+        <img src="32.jpg" onclick="setMain(18)" alt="">
+        <img src="34.jpg" onclick="setMain(19)" alt="">
+        <img src="16.jpg" onclick="setMain(20)" alt="">
+        <img src="26.jpg" onclick="setMain(21)" alt="">
+        <img src="30.jpg" onclick="setMain(22)" alt="">
+        <img src="33.jpg" onclick="setMain(23)" alt="">
+        <img src="29.jpg" onclick="setMain(24)" alt="">
       </div>
     </div>
   </div>
